@@ -1,0 +1,25 @@
+*
+body{
+    background-color: black;
+}
+div{
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    border: 1px #fff;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    animation-name: ex;
+    animation-duration: 10s;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+}
+@keyframes ex{
+    0%{top: 0px; left: 0px; border-radius: 0px 0px 0px 0px;}
+    25%{top: 0px; left: 700px; border-radius: 0px 100px 0px 0px; background-color: #E60023;}
+    50%{top: 500px; left: 700px; border-radius: 0px 100px 100px 0px; background-color: #FFC72C;}
+    75%{top: 500px; left: 0px; border-radius: 0px 100px 100px 100px; background-color: #1DB954;}
+    100%{top: 0px; left: 0px; border-radius: 100px 100px 100px 100px; background-color: #1877F2;}
+}
